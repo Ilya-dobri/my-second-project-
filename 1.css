@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    background: #292828;
+    background-position: center;
+}   
+
+.separator {
+    border: none;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.5); /* Прозрачный цвет линии */
+    margin: 20px 10; /* Расстояние от линии до текста */
+}
+
+
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    box-shadow: 0 5px 10px;
+
+}
+
+
+
+
+header .logo{
+    font-size: 20px;
+    font-weight: 900;
+    color: #000;
+    transition: .5s;
+}
+
+header .logo:hover{
+    transform: scale(1.2);
+}
+
+header nav ul li {
+    position: relative;
+    float: left;
+}
+
+
+header nav ul li a {
+    padding: 15px;
+    color: black;
+    font-size: 16px;
+    display: block;
+    border-radius: 8px; 
+}
+
+header nav ul li a:hover {
+    text-align: center;
+    text-emphasis: none;
+    background: #161616;
+    color: #ffffff;
+    border-radius: 8px; 
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav ul li ul {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background:  white;
+    border-radius: 8px; 
+    display: none;
+}
+
+nav ul li ul li {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0,.1);
+}
+
+nav ul li ul li ul {
+    left: 180px;
+    top: 0%
+}
+
+nav ul li:hover > ul {
+    display: initial;
+}
+
+
+
+.box{
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+
+}
+.text{
+    width: 50%;
+    padding-right: 30px;
+}
+
+
+.img{
+    width: 50%;
+    margin-top: -10px; /* Уменьшаем отступ сверху */
+    margin-bottom: -10px;
+}
+
+.img img{
+    width: 100%; /* Чтобы изображение занимало всю ширину блока */
+    border-radius: 8px;
+    box-shadow: 0 10px 10px; /* Уменьшаем отступ снизу */
+}
+
+h4{
+    text-align: center;
+    text-emphasis: none;
+    background: #333232;
+    color: #ffffff;
+    border-radius: 8px; 
+
+    font-size: 20px;
+    text-decoration: none;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    margin: 32px;  
+}
+
+.text2{
+    text-align: center;
+    text-emphasis: none;
+    background: #333232;
+    color: #ffffff;
+    border-radius: 8px; 
+
+    font-size: 20px;
+    text-decoration: none;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    margin: 32px;  
+
+
+}
+
+.text {
+    text-align: right; /* Это выравнивает текст по правому краю */
+    text-emphasis: none;
+    background: #333232;
+    color: #ffffff;
+    border-radius: 8px; 
+    font-size: 20px;
+    text-decoration: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: 32px;  
+  }
+  
+  /* Дополнительный текст или элемент, который также нужно выровнять по правому краю */
+  .another-text {
+    text-align: center;
+    color: #ffffff;
+    border-radius: 8px; 
+    font-size: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 32px;
+    margin: 0; /* Убираем отступы снаружи */
+    margin-bottom: -20px /* Поднимаем текст вверх на 20px */
+  }
+
